@@ -653,7 +653,7 @@ install (FILES ${CMAKE_CURRENT_BINARY_DIR}/Eigen3Config.cmake
          DESTINATION ${CMAKEPACKAGE_INSTALL_DIR})
 
 # Add uninstall target
-add_custom_target ( uninstall
+add_custom_target ( eigen_uninstall
     COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_SOURCE_DIR}/cmake/EigenUninstall.cmake)
 
 if (EIGEN_SPLIT_TESTSUITE)
